@@ -1,0 +1,103 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    margin: 1em 0;
+}
+
+.game-result {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    height: 1.5em;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.player-name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.player-avatar-container {
+    width: 8em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-avatar-container img {
+    width: 6em;
+    height: 6em;
+}
+
+.player-score {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.unselected-player {
+    border: 0.5em solid #000000;
+}
+
+.selected-player {
+    border: 0.5em solid #00c04b;
+}
+
+.board {
+    border: 1px solid #000000;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    width: 6em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
+.square p {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.x-square {
+    color: #0000ff;
+}
+
+.o-square {
+    color: #ff0000;
+}
+
+.normal-square:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.disabled-square p {
+    cursor: default;
+}
+
+.disabled-square:hover {
+    cursor: default;
+}
